@@ -28,7 +28,7 @@
 .products
 {
     text-align: center;
-    background: url(leaves.jpg);
+    background: url("../assets/leaves.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
