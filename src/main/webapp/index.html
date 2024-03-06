@@ -1,55 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Login Page in HTML with CSS Code Example</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="box-form">
-	<div class="left">
-		<div class="overlay">
-			<h1>Happy Shopping</h1>
-		</div>
-	</div>
-
-
-	<div class="right">
-		<h5>Login</h5>
-		<div class="inputs">
-			<input type="text" placeholder="user name">
-			<br>
-			<input type="password" placeholder="password">
-		</div>
-
-		<br><br>
-
-		<div class="remember-me--forget-password">
-			<!-- Angular -->
-			<label>
-				<input type="checkbox" name="item" checked/>
-				<span class="text-checkbox">Remember me</span>
-			</label>
-			<p>forget password?</p>
-		</div>
-
-		<br>
-		<button>Login</button>
-		<br>
-		<br>
-
-		<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
-	</div>
-
-
-</div>
-<!-- partial -->
-
+    <div class="title">
+        <img src="cart.png" width="200" height="200"/>
+        <div class="title-head">
+            <a id="title" href="#product">Shopping Cart</a>
+        </div>
+    </div>
+    <div class="products" target="product">
+        <div id="product">
+            <button class="btn btn-warning">View Cart</button>
+            Products
+            <button class="btn btn-danger">Login/Signin</button>
+        </div>
+        <div class="cards container">
+            <div class="card-group">
+                <div class="card">
+                    <img src="headphones.jpg" class="card-img-top images"/>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Headphones
+                        </h2>
+                        <p class="card-text">
+                            ₹1000
+                        </p>
+                        <button class="btn btn-danger">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="processor.jpg" class="card-img-top images"/>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Processor
+                        </h2>
+                        <p class="card-text">
+                            ₹20000
+                        </p>
+                        <button class="btn btn-danger">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-group">
+                <div class="card">
+                    <img src="keyboard.jpeg" class="card-img-top images"/>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Keyboard
+                        </h2>
+                        <p class="card-text">
+                            ₹2000
+                        </p>
+                        <button class="btn btn-danger">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="mouse.jpg" class="card-img-top images"/>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Mouse
+                        </h2>
+                        <p class="card-text">
+                            ₹1500
+                        </p>
+                        <button class="btn btn-danger">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
