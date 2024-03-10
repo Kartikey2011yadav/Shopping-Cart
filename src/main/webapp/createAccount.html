@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>Login Page in HTML with CSS Code Example</title>
+    <title>Sign Up Page</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
@@ -21,17 +21,18 @@
 
     <div class="right-create">
         <h5>Sign up</h5>
+        <form action="create-Account" method="post">
+            <div class="inputs">
+                <input type="text" placeholder="user name" name="user">
+                <br>
+                <input type="password" placeholder="password" name="password">
+                <br>
+                <input type="password" placeholder="confirm password" name="conf-password">
+            </div>
 
-        <div class="inputs">
-            <input type="text" placeholder="user name">
             <br>
-            <input type="password" placeholder="password">
-            <br>
-            <input type="password" placeholder="confirm password">
-        </div>
-
-        <br>
-        <button>Create</button>
+            <button type="submit" value="submit">Create</button>
+        </form>
         <br>
         <br>
 
