@@ -38,3 +38,15 @@ build/
 .DS_Store
 /src/main/webapp/JDBCConn.java
 /.idea/
+/.idea/*
+/.idea/inspectionProfiles/
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/dbnavigator.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
