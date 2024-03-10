@@ -21,8 +21,8 @@ public class cart extends HttpServlet
         {
             String oid=req.getParameter("value");
             String operation=req.getParameter("operation");
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping","root","2003");
+            JDBCConn jdbcConn = new JDBCConn();
+            Connection conn = jdbcConn.getConn();
             Statement stmt=conn.createStatement();
             if(Objects.equals(operation, "add"))
             {
